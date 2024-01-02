@@ -244,13 +244,13 @@ private:
         static double lastX = xPos;
         static double lastY = yPos;
 
-        float xOffset = xPos - lastX;
-        float yOffset = yPos - lastY; // Reversed since y-coordinates go from bottom to top
+        double xOffset = xPos - lastX;
+        double yOffset = yPos - lastY; // Reversed since y-coordinates go from bottom to top
 
         lastX = xPos;
         lastY = yPos;
 
-        camera.processMouseMovement(xOffset, yOffset);
+        camera.processMouseMovement((float)xOffset, (float)yOffset);
     }
 
     static void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods) {
