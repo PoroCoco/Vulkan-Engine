@@ -20,3 +20,6 @@ Follow these steps to build and run :
     ```bash
     ./main
     ```
+## Credits
+
+This engine is made following the [Vulkan-Tutorial](https://vulkan-tutorial.com/).
